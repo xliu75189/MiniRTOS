@@ -33,8 +33,8 @@ OS_MQ OS_MQcb_Tbl[OS_MAX_MQ];         /* Table of QUEUE control blocks */
 *********************************************************************************************************
 *               QUEUE MODULE INITIALIZATION
 *
-* Description : This function is called by OS to initialize the message queue module. The
-*               application MUST NOT call this function.
+* Description : This function is called by OS to initialize the message queue module. 
+*               The application MUST NOT call this function.
 *
 * Arguments   :  none
 *
