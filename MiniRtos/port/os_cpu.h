@@ -56,4 +56,8 @@ void OS_CPU_SR_Restore(OS_CPU_SR cpu_sr);
 #endif /* OS_CRITICAL_METHOD3 */
 #define  OS_CONTEXT_SWITCH() *(uint32_t volatile *)0xE000ED04 = (1U << 28)
 
+/* set the PendSV interrupt (PendSV_Handler) priority to the lowest level 0xFF */
+#define SET_PENDSV_INT_PRIO_TO_LOWEST_LEVEL()  *(uint32_t volatile *)0xE000ED20 |= (0xFFU << 16)
+#define TRIGER_PENDSV_INT() *(uint32_t volatile *)0xE000ED04 = (1U << 28)
+
 #endif /* __OS_CPU_H__ */

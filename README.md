@@ -1,4 +1,4 @@
-# Sub-directories in this lesson:
+# Sub-directories in this project:
 ```
 |
 +---Application     - Test files for MiniRTOS

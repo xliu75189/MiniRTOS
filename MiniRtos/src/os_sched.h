@@ -27,8 +27,4 @@
 void OS_tick(void);
 void OS_sched(void);
 
-/* set the PendSV interrupt (PendSV_Handler) priority to the lowest level 0xFF */
-#define SET_PENDSV_INT_PRIO_TO_LOWEST_LEVEL()  *(uint32_t volatile *)0xE000ED20 |= (0xFFU << 16)
-#define TRIGER_PENDSV_INT() *(uint32_t volatile *)0xE000ED04 = (1U << 28)
-
 #endif /* _OS_SCHED_H_ */
