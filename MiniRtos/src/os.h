@@ -36,7 +36,6 @@
 #define OS_ERR_EVENT_TYPE     1
 #define OS_ERR_Q_FULL         2
 #define OS_ERR_SEM_OVF        100
-#define OS_NO_MATCH_FOUND     20;
 
 #define PRIORITY_TO_BIT(index) (1U << (index - 1U))
 #define OS_MAX_MQ 8
