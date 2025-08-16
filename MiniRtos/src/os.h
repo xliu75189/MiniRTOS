@@ -51,7 +51,7 @@ typedef struct os_tcb {
     uint8_t          OS_TcbState;         /* Task status */
     uint8_t          OS_TcbStatePend;     /* Task PEND status */
     void             *OS_TcbMQMsg;        /* Message received from OSMboxPost() or OSQPost() */
-    char             *OS_TcbName;
+    char             *OS_TcbName;          /* TCB name */
     /* ... other attributes associated with a thread */
 } OS_TCB;
 typedef struct os_event {
